@@ -4,7 +4,7 @@ import Colors from '../screens/Colors';
 const Label = (props) => {
   return (
     <>
-      <Text style={[styles.label, Colors.labelBlue]}>
+      <Text style={[styles.label, Colors.labelBlue, props.textStyle]}>
         {props.text}
       </Text>
     </>
@@ -17,6 +17,6 @@ const styles = StyleSheet.create({
   label: {
       fontSize:20, 
       marginLeft: 13, 
-      marginTop: 40,
+      marginTop: 40
   },
 });

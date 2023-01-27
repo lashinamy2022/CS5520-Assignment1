@@ -1,21 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
-import Colors from './screens/Colors';
-import BackgroundGradient from './components/BackgroundGradient';
-import Card from './components/Card';
+import Starting from './screens/Starting';
+import Confirm from './screens/Confirm';
+import Finish from './screens/Finish';
 export default function App() {
   return (
-   <View style={[styles.container, Colors.bgOrange]}>
-      <BackgroundGradient />
-      <Card />
-   </View>
+    <Starting />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

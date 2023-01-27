@@ -1,4 +1,4 @@
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet,Alert } from 'react-native';
 import React from 'react';
 import Colors from '../screens/Colors';
 

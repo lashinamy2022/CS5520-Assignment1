@@ -1,7 +1,6 @@
 import { StyleSheet, View, Text } from 'react-native';
 import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-import Card from './Card';
 
 const BackgroundGradient = () => {
     return (

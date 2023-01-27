@@ -16,6 +16,9 @@ const Colors = StyleSheet.create({
     },
     btBlue: {
         color: 'rgb(73,80,215)'
+    },
+    boxBorder: {
+        color: 'black'
     }
   });
 export default Colors
