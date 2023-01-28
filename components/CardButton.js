@@ -2,13 +2,13 @@ import { View, Text, Button, StyleSheet,Alert } from 'react-native';
 import React from 'react';
 import Colors from '../screens/Colors';
 
-const CardButton = (props) => {
+const CardButton = ({name, color, pressFun}) => {
   return (
     <>
         <Button
-        title={props.name}
-        color={props.color}
-        onPress={() => Alert.alert('Simple Button pressed')}
+        title={name}
+        color={color}
+        onPress={pressFun}
         />
     </>
   )

@@ -14,11 +14,15 @@ const Colors = StyleSheet.create({
     inputBoxBorderBlue: {
         borderBottomColor: 'rgb(51,11,154)', 
     },
+    inputFontBlue: {
+        color: 'rgb(51,11,154)', 
+    },
     btBlue: {
         color: 'rgb(73,80,215)'
     },
     boxBorder: {
         color: 'black'
-    }
+    },
+
   });
 export default Colors
