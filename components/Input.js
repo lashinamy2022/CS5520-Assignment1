@@ -2,19 +2,13 @@ import { View, Text, TextInput, StyleSheet } from 'react-native';
 import React from 'react';
 import { useState } from 'react';
 import Colors from '../screens/Colors';
-const Input = ({setEmailText, setPhoneText, type, value}) => {
-
+const Input = ({setInputValue, value}) => {
   return (
     <>
-     <TextInput   style={[styles.inputBox, Colors.inputBoxBorderBlue, Colors.inputFontBlue]} 
+     <TextInput value={value} style={[styles.inputBox, Colors.inputBoxBorderBlue, Colors.inputFontBlue]} 
       onChangeText={(changedText)=>{
-        if (type == 'email') {
-          console.log("input:" + changedText);
-         //setEmailText(changedText);
-        } else if (type == 'phone') {  
-          setPhoneText(changedText);
-        }
-      }} 
+        setInputValue(changedText);
+      }}
       />
     </>
   )
