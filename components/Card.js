@@ -2,8 +2,7 @@ import {StyleSheet, View} from 'react-native';
 import React from 'react'
 import Colors from '../screens/Colors';
 
-const Card = ({cardStyle, children}
-  ) => {
+const Card = ({cardStyle, children}) => {
   return (
     <View style={[styles.card, Colors.bgGrey, cardStyle]}>   
       {children}
