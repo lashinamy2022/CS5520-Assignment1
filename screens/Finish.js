@@ -18,7 +18,7 @@ const Finish = ({type, changeStatus, setEmailFun, setPhoneFun, phoneValue}) => {
            (type == "thank") ? (
             <Card cardStyle={{marginTop:80, height: 260}}>
               <Label text="Thank you for signing up.Here's a picture for you(based on the last digit of your phone number)." textStyle={{marginTop:15, fontSize:18}}/>
-              <Image source={{uri:'https://picsum.photos/id/'+ phone+'/100/100'}} style={styles.image}/>
+              <Image source={{uri:'https://picsum.photos/id/'+phone+'/100/100'}} style={styles.image}/>
             </Card>
            ) : (
             <Card cardStyle={{marginTop:80, width: 200, height: 190}}>

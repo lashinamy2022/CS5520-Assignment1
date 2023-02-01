@@ -2,13 +2,13 @@ import { StyleSheet, View, Text } from 'react-native';
 import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
 
-const BackgroundGradient = () => {
+const BackgroundGradient = ({children}) => {
     return (
       <LinearGradient
         // Background Linear Gradient
         colors={['skyblue', 'transparent']}
         style={styles.background}
-      /> 
+      >{children}</LinearGradient>
     );
 }
 
