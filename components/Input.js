@@ -2,7 +2,7 @@ import { View, Text, TextInput, StyleSheet } from 'react-native';
 import React from 'react';
 import { useState } from 'react';
 import Colors from '../screens/Colors';
-const Input = ({setInputValue, value, setErrMessage}) => {
+const Input = ({setInputValue, value, setErrMessage, keyboardType}) => {
   return (
     <>
      <TextInput value={value} style={[styles.inputBox, Colors.inputBoxBorderBlue, Colors.inputFontBlue]} 
@@ -10,6 +10,7 @@ const Input = ({setInputValue, value, setErrMessage}) => {
         setInputValue(changedText);
         setErrMessage();
       }}
+      keyboardType={keyboardType}
       />
     </>
   )
