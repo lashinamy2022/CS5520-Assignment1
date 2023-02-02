@@ -13,6 +13,7 @@ const Starting = ({
   setPhoneFun,
   emailValue,
   phoneValue,
+  setVisibilityFun,
 }) => {
   const [emailErrMessage, setEmailErrMessage] = useState("");
   const [phoneErrMessage, setPhoneErrMessage] = useState("");
@@ -21,7 +22,7 @@ const Starting = ({
     <View style={[styles.container, Colors.bgOrange]}>
       <BackgroundGradient>
         <View style={[styles.box, Colors.boxBorder]}>
-          <Text>Sign up</Text>
+          <Text style={Colors.labelBlue}>Sign up</Text>
         </View>
         <Card>
           <View>
@@ -35,6 +36,7 @@ const Starting = ({
                 setEmailErrMessage("");
                 setPhoneErrMessage("");
               }}
+              keyboardType="email-address"
             />
             <ErrorText message={emailErrMessage} />
             <Label text="Phone number" />
@@ -47,6 +49,7 @@ const Starting = ({
                 setEmailErrMessage("");
                 setPhoneErrMessage("");
               }}
+              keyboardType="numeric"
             />
             <ErrorText message={phoneErrMessage} />
           </View>
@@ -57,6 +60,8 @@ const Starting = ({
               pressFun={() => {
                 setEmailFun("");
                 setPhoneFun("");
+                setEmailErrMessage("");
+                setPhoneErrMessage("");
               }}
             />
             <CardButton
@@ -75,7 +80,7 @@ const Starting = ({
                   }
                   return;
                 }
-                changeStatus(2);
+                setVisibilityFun(true);
               }}
             />
           </View>
@@ -104,6 +109,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-around",
-    marginTop: 30,
+    padding: 20,
   },
 });
